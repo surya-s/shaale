@@ -12,4 +12,10 @@ public class MainController {
     public String home(Model model) {
         return "index";
     }
+
+    @GetMapping("/home")
+    public String hod(Model model){ return "home"; }
+
+    @GetMapping("/facultylist")
+    public String faculty(Model model){ return "faculty"; }
 }

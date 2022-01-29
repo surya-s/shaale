@@ -1,17 +1,17 @@
 package com.shaale.rms.dao;
 
-import com.shaale.rms.entity.Payment;
+import com.shaale.rms.entity.Faculty;
 
-public class PaymentUpdateDAO {
+public class FacultyUpdateDAO {
     public enum Action {
         UPDATE,
         DELETE
     }
 
     private Action action;
-    private Payment data;
+    private Faculty data;
 
-    public PaymentUpdateDAO() {}
+    public FacultyUpdateDAO() {}
 
     public Action getAction() {
         return action;
@@ -21,12 +21,11 @@ public class PaymentUpdateDAO {
         this.action = action;
     }
 
-    public Payment getData() {
+    public Faculty getData() {
         return data;
     }
 
-    public void setData(Payment data) {
+    public void setData(Faculty data) {
         this.data = data;
     }
-
 }
